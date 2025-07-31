@@ -8,13 +8,15 @@
 <body class="tela-inicial">
   <div class="form-container">
     <h1>Cadastro</h1>
-    <form>
-      <input type="email" placeholder="Digite seu e-mail" required>
-      <input type="password" placeholder="Digite sua senha" required>
-      <input type="password" placeholder="Confirme a senha" required>
+    <form id="formCadastro" onsubmit="cadastrarUsuario(event)">
+      <input type="email" id="emailCadastro" placeholder="Digite seu e-mail" required>
+      <input type="password" id="senhaCadastro" placeholder="Digite sua senha" required>
+      <input type="password" id="confirmarSenha" placeholder="Confirme a senha" required>
       <button type="submit">Cadastrar</button>
     </form>
+
     <a href="index.html" class="voltar">Voltar</a>
-  </div>
+  </div>    
+  <script src="cadastro.js"></script>
 </body>
 </html>

@@ -6,10 +6,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="fade-in">
-    <header>
-        <h1>Filmes Online</h1>
-        <div class="barra-divisao"></div>
-    </header>
+  
+  <header id="user-header">
+    <h1 style="margin: 0; color: #ff0000; text-shadow: 2px 2px 8px #000;">Filmes Online</h1>
+    <div id="user-info"></div>
+    <div id="user-actions" class="hidden">
+      <button onclick="location.href='login.html'" class="header-btn">Login</button>
+      <button onclick="location.href='cadastro.html'" class="header-btn">Cadastro</button>
+    </div>
+  </header>
+
+  <!-- Menu lateral -->
+  <div id="sidebar" class="sidebar hidden">
+    <p>Olá, <span id="sidebar-user-name"></span>!</p>
+    <!-- Futuras opções -->
+  </div>
 
     <main>
       <section class="destaque">
@@ -85,9 +96,10 @@
         <button class="navegar direita">&#9654;</button>
     </div>
       </section>
-      
+
     </main>
 
     <script src="navegacao.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
